@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Bus Booking</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<h2>Expressway Explorer</h2>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="route.html">Route</a></li>
+<li><a class="active" href="bus-booking.html">Bus Booking</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+<button onclick="darkMode()">Dark Mode</button>
+
+</nav>
+
+</header>
+
+
+<section>
+
+<h1 class="title">
+Delhi-Dehradun Bus Booking
+</h1>
+
+
+<div class="card">
+
+<form onsubmit="bookBus(); return false;">
+
+
+<label>From</label>
+
+<select id="busFrom">
+
+<option>Delhi</option>
+<option>Baghpat</option>
+<option>Saharanpur</option>
+
+</select>
+
+
+<label>To</label>
+
+<select id="busTo">
+
+<option>Dehradun</option>
+<option>Saharanpur</option>
+
+</select>
+
+
+<label>Travel Date</label>
+
+<input type="date" id="date">
+
+
+<label>Passengers</label>
+
+<input type="number" id="passengers" min="1">
+
+
+<label>Bus Type</label>
+
+<select id="busType">
+
+<option>AC Volvo</option>
+<option>AC Sleeper</option>
+<option>Non AC</option>
+
+</select>
+
+
+<button type="submit">
+Book Ticket
+</button>
+
+
+<p id="bookingResult"></p>
+
+
+</form>
+
+</div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

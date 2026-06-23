@@ -150,3 +150,44 @@ document.getElementById("travelResult").innerHTML =
 "Safe Journey! Route details are displayed above.";
 
 }
+function bookBus(){
+
+let from=document.getElementById("busFrom").value;
+let to=document.getElementById("busTo").value;
+let passengers=document.getElementById("passengers").value;
+let type=document.getElementById("busType").value;
+
+
+if(passengers==""){
+
+alert("Enter number of passengers");
+return;
+
+}
+
+
+let price=0;
+
+
+if(type=="AC Volvo"){
+    price=800;
+}
+else if(type=="AC Sleeper"){
+    price=1000;
+}
+else{
+    price=500;
+}
+
+
+let total=price*passengers;
+
+
+document.getElementById("bookingResult").innerHTML=
+
+"Booking Successful!<br>"+
+"Route: "+from+" → "+to+
+"<br>Bus: "+type+
+"<br>Total Price: ₹"+total;
+
+}
